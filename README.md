@@ -4,17 +4,20 @@
 
 A Spotify WebPlayer built on Node.js with an Express.js server and React.js client. Built for usage within a [WKWebView](https://developer.apple.com/documentation/webkit/wkwebview) in the [MultiPlaylists App](https://github.com/riverray121/MultiPlaylists).
 
+Prepared for Heroku deployment if desired: see "heroku-postbuild" in package.json of root directorty
+
 ## Usage
 
 ### Run Locally
 
 1. Clone this repository and 'cd' into it
 2. Create an app on the [Spotify Developer website](https://developer.spotify.com/dashboard/login)
-3. Add http://localhost:5000/auth/callback to your redirect URI's of your new Spotify App (Dashbord->Your App->Edit Settings)
+3. Add <http://localhost:5000/auth/callback> to your redirect URI's of your new Spotify App (Dashbord->Your App->Edit Settings)
 4. Copy your Client ID and Client Secret to the .env file in the root directory
 5. Ensure you have 'nvm' installed and run 'nvm use 16' to use node LTS v16.x
-6. Run 'npm start'
-7. Open http://localhost:5000
+6. Create the react build: 'cd' into 'client' directory, run 'npm run build', then 'cd' back to root directory
+7. Run 'npm start'
+8. Open <http://localhost:5000>
 
 ## Resources
 
